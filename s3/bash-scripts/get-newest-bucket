@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+echo "listing newest bucket..."
+
+# Tabular name form
+# aws s3api list-buckets --query Buckets[].Name --output=table
+
+# List name form
+aws s3api list-buckets | jq -r '.Buckets | sort_by(.CreationDate) | reverse | .[0] | .Name'
