@@ -1,0 +1,12 @@
+#! /usr/bin/env bash
+
+echo "listing buckets..."
+
+# Tabular name form
+# aws s3api list-buckets --query Buckets[].Name --output=table
+
+# List first 5 buckets
+# aws s3api list-buckets | jq -r '.Buckets | sort_by(.CreationDate) | reverse | .[0:5] | .[] | .Name'
+
+# List first bucket only
+aws s3api list-buckets | jq -r '.Buckets | sort_by(.CreationDate) | reverse | .[] | .Name'

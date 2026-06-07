@@ -6,8 +6,8 @@
   },
   "containerEnv": {
     "AWS_DEFAULT_REGION": "us-east-1",
-    "AWS_PROFILE": "default",
     "AWS_ACCESS_KEY_ID": "${localEnv:AWS_ACCESS_KEY_ID}",
-    "AWS_SECRET_ACCESS_KEY": "${localEnv:AWS_SECRET_ACCESS_KEY}"
+    "AWS_SECRET_ACCESS_KEY": "${localEnv:AWS_SECRET_ACCESS_KEY}",
+    "AWS_CLI_AUTO_PROMPT": "${localEnv:AWS_CLI_AUTO_PROMPT}"
   }
 }
