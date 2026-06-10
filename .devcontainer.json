@@ -5,7 +5,14 @@
     "ghcr.io/devcontainers/features/aws-cli:1": {},  
   // https://docs.aws.amazon.com/powershell/v5/reference/items/pstoolsref-welcome.html
     "ghcr.io/devcontainers/features/powershell:2.0.2": {},
-     "ghcr.io/devcontainers/features/git-lfs:1": {}
+     "ghcr.io/devcontainers/features/git-lfs:1": {},
+  //  https://docs.aws.amazon.com/sdk-for-ruby/v3/api/
+     "ghcr.io/devcontainers/features/ruby:1": {
+      "version": "3.3"
+      },
+      "ghcr.io/devcontainers/features/java:1": {
+      "version": "21"
+    }
   },
   "containerEnv": {
     "AWS_DEFAULT_REGION": "us-east-1",
