@@ -15,7 +15,10 @@
       "version": "21",
       // https://maven.apache.org/what-is-maven.html
       "installMaven": "true"
-    }
+      
+      },
+      // https://developer.hashicorp.com/terraform/cli
+      "ghcr.io/devcontainers/features/terraform:1": {}
   },
   "containerEnv": {
     "AWS_DEFAULT_REGION": "us-east-1",
