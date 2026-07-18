@@ -1,0 +1,11 @@
+name: s3-smiple-sdk
+description: A python project for AWS S3 to create a bucket, simply.
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-python
